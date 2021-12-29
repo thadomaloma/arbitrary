@@ -1,0 +1,19 @@
+<h1>Post Listing Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.content %></td>
+        <td>Placeholder</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
