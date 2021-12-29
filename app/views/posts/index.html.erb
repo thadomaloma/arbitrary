@@ -12,7 +12,8 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.content %></td>
-        <td>Placeholder</td>
+        <td><%= link_to 'List', post_path(post) %></td>
+        <td><%= link_to 'Delete', post_path(post), method: :delete %></td>
       </tr>
     <% end %>
   </tbody>
