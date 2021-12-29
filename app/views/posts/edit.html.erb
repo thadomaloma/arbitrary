@@ -1,4 +1,4 @@
-<h1>Edit post</h1>
+<h1>Edit Tweet</h1>
 
 <% if @post.errors.any? %>
   <h3>The following errors prevented the post from being saved.</h3>
@@ -21,3 +21,5 @@
   </p>
 
 <% end %>
+
+<%= link_to 'Cancel and return to tweets listing', posts_path %>

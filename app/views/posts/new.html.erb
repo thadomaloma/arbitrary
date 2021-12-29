@@ -1,4 +1,4 @@
-<h1>Create a new post</h1>
+<h1>Create a new tweet</h1>
 
 <% if @post.errors.any? %>
   <h3>The following errors prevented the post from being saved.</h3>
@@ -21,3 +21,5 @@
   </p>
 
 <% end %>
+
+<%= link_to 'Return to tweet listing', posts_path %>
