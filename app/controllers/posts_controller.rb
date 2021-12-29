@@ -13,7 +13,9 @@ class PostsController < ApplicationController
   end
 
   def create
-    
+    @post = Post.new(params.require(:post).permit(:content))
+    @post.save
+    redirect_to @post
   end
 
 end
