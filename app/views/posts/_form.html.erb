@@ -1,8 +1,8 @@
 <% if @post.errors.any? %>
   <h3>The following errors prevented the post from being saved.</h3>
-  <ul>
+  <ul id="message">
     <% @post.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
+       <%= msg %>
     <% end %>
   </ul>
 <% end %>
