@@ -7,7 +7,7 @@
   </ul>
 <% end %>
 
-<%= form_with(model: @post, local: true) do |f| %>
+<%= form_with(model: @post, local: true, url: confirm_posts_path) do |f| %>
 
   <p>
     <%= f.label :content %><br>

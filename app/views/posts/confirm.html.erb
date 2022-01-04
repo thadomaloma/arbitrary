@@ -1,0 +1,12 @@
+<h3>Send with the following contents.</h3>
+<%= form_with(model: @post, local: true) do |f| %>
+
+    <%= f.hidden_field :content %>
+
+    <p>Text:<%= @post.content %></p>
+
+    <%= f.submit "register" %>
+
+<% end %>
+
+<p><%= link_to 'Return', :back %></p>
